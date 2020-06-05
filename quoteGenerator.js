@@ -1,19 +1,19 @@
 
 let quotes1 = [
-    "Do not give up",
-    "keep trying",
-    "never stop",
-    "you will get it"];
+    "do not give up, ",
+    "keep trying, ",
+    "never stop, ",
+    "you will get it "];
 let quotes2 = [
-    "Try everything",
-    "but before you try",
-    "think because it will",
-    "return back to you"];
+    "try everything, ",
+    "but before you try, ",
+    "think because it will, ",
+    "return back to you "];
 let quotes3 = [
-    "You will be fine",
-    " don't worry",
-    "just go there",
-    " to much"];
+    "you will be fine, ",
+    " don't worry, ",
+    "just go there, ",
+    " to much "];
     
 
  function randomQuote(quotes1) {
@@ -31,4 +31,6 @@ function randomQuote(quotes2) {
  }
  console.log(randomQuote(quotes3))
 
-let randomQuotes = quotes1 + quotes2 + quotes3;
+let randomQuotes = randomQuote(quotes1) + randomQuote(quotes2) + randomQuote(quotes3);
+
+console.log(randomQuotes);
