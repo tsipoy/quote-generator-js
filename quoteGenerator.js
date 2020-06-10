@@ -24,7 +24,6 @@ let string2 = quotes1[randomIndex2];
 let string3 = quotes1[randomIndex3];
 
 let quote = `${string1} ${string2} ${string3}`;
-console.log(quote);
 
 const generatedQuote = () => {
     let randomIndex1 = Math.floor(Math.random() * quotes1.length);
@@ -77,4 +76,16 @@ let quote = generatedQuote();
     console.error('We need a number between 1 and 5');
 }
 
-
+let randomQuote = Number(prompt('Choose between 2 types of quote generator'));
+function random (randomQuotes) {
+        let generatedQuote = 0;
+    while (generatedQuote < 3) {
+        if (generatedQuote == "yes") {
+            generatedQuote ++;
+        } else {
+            break;
+        }
+   }
+   return generatedQuote * randomQuotes;
+}
+console.log(quote);
